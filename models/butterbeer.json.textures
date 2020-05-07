@@ -2,8 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "glass_white",
         "1": "butterbeer.png",
+        "2": "glass",
         "missing": ""
       },
       "name": "default"
