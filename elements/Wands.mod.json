@@ -2,9 +2,9 @@
   "_fv": 6,
   "_type": "tab",
   "definition": {
-    "name": "Yaaw Items",
+    "name": "Wands",
     "icon": {
-      "value": "Items.DEBUG_STICK"
+      "value": "Items.STICK"
     },
     "showSearch": false
   }

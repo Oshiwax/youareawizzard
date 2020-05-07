@@ -2,17 +2,17 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "YaawItems",
+      "name": "Wands",
       "type": "tab",
-      "sortid": 1,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {}
     },
     {
-      "name": "Weshcava",
+      "name": "ButterBeer",
       "type": "block",
-      "sortid": 2,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -22,8 +22,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabyaawitems": "Yaaw Items",
-      "block.yaaw.weshcava": "Weshcava"
+      "itemGroup.tabwands": "Wands",
+      "block.yaaw.butterbeer": "Butter Beer"
     }
   },
   "workspaceSettings": {

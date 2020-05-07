@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "yaaw:block/butterbeer"
+    },
+    "facing=east": {
+      "model": "yaaw:block/butterbeer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "yaaw:block/butterbeer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "yaaw:block/butterbeer",
+      "y": 270
+    }
+  }
+}
