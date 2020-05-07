@@ -104,14 +104,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "ButterBeerFoodFoodEaten",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Food",
+      "type": "tab",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "bu",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.yaaw.wand": "Wand",
       "item.yaaw.butterbeerfood": "Butter Beer",
+      "itemGroup.tabfood": "Food",
       "itemGroup.tabwands": "Wands",
       "block.yaaw.butterbeer": "Butter Beer"
     }

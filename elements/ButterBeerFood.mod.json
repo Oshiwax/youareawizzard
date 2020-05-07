@@ -10,12 +10,15 @@
       "value": "CUSTOM:Wands"
     },
     "stackSize": 64,
-    "nutritionalValue": 4,
+    "nutritionalValue": 1,
     "saturation": 0.3,
     "eatingSpeed": 32,
     "forDogs": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "drink",
-    "hasGlow": false
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ButterBeerFoodFoodEaten"
+    }
   }
 }

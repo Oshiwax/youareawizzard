@@ -54,6 +54,7 @@ public class YaawVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "yaaw_mapvars";
+		public double bu = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -64,10 +65,12 @@ public class YaawVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			bu = nbt.getDouble("bu");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putDouble("bu", bu);
 			return nbt;
 		}
 

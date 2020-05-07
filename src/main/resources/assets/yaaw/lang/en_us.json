@@ -1,6 +1,7 @@
 {
   "item.yaaw.wand": "Wand",
   "item.yaaw.butterbeerfood": "Butter Beer",
+  "itemGroup.tabfood": "Food",
   "itemGroup.tabwands": "Wands",
   "block.yaaw.butterbeer": "Butter Beer"
 }

@@ -3,11 +3,14 @@ package net.mcreator.yaaw.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
+import net.minecraft.entity.LivingEntity;
 
+import net.mcreator.yaaw.procedures.ButterBeerFoodFoodEatenProcedure;
 import net.mcreator.yaaw.itemgroup.WandsItemGroup;
 import net.mcreator.yaaw.YaawElements;
 
@@ -25,13 +28,29 @@ public class ButterBeerFoodItem extends YaawElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(WandsItemGroup.tab).maxStackSize(64).food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
+			super(new Item.Properties().group(WandsItemGroup.tab).maxStackSize(64)
+					.food((new Food.Builder()).hunger(1).saturation(0.3f).setAlwaysEdible().build()));
 			setRegistryName("butterbeerfood");
 		}
 
 		@Override
 		public UseAction getUseAction(ItemStack par1ItemStack) {
 			return UseAction.DRINK;
+		}
+
+		@Override
+		public ItemStack onItemUseFinish(ItemStack itemStack, World world, LivingEntity entity) {
+			ItemStack retval = super.onItemUseFinish(itemStack, world, entity);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				ButterBeerFoodFoodEatenProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }
