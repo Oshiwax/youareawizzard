@@ -3,8 +3,8 @@
   "textures": {
     "all": "yaaw:blocks/butterbeer.png",
     "particle": "yaaw:blocks/butterbeer.png",
-    "0": "yaaw:blocks/glass_white",
     "1": "yaaw:blocks/butterbeer.png",
+    "2": "yaaw:blocks/glass",
     "missing": "yaaw:blocks/"
   }
 }
