@@ -1,12 +1,24 @@
 
 package net.mcreator.yaaw.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.yaaw.procedures.WandRightClickedInAirProcedure;
+import net.mcreator.yaaw.itemgroup.WandsItemGroup;
+import net.mcreator.yaaw.YaawElements;
+
 @YaawElements.ModElement.Tag
 public class WandItem extends YaawElements.ModElement {
-
 	@ObjectHolder("yaaw:wand")
 	public static final Item block = null;
-
 	public WandItem(YaawElements instance) {
 		super(instance, 5);
 	}
@@ -15,9 +27,7 @@ public class WandItem extends YaawElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(WandsItemGroup.tab).maxStackSize(1));
 			setRegistryName("wand");
@@ -52,12 +62,9 @@ public class WandItem extends YaawElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-
 				WandRightClickedInAirProcedure.executeProcedure($_dependencies);
 			}
 			return ar;
 		}
-
 	}
-
 }
