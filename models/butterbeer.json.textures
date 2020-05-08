@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "butterbeer.png",
+        "2": "glass",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

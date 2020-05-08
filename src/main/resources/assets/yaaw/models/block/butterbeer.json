@@ -1,0 +1,10 @@
+{
+  "parent": "yaaw:custom/butterbeer",
+  "textures": {
+    "all": "yaaw:blocks/butterbeer.png",
+    "particle": "yaaw:blocks/butterbeer.png",
+    "1": "yaaw:blocks/butterbeer.png",
+    "2": "yaaw:blocks/glass",
+    "missing": "yaaw:blocks/"
+  }
+}
