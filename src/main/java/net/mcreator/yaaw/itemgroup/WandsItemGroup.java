@@ -4,10 +4,10 @@ package net.mcreator.yaaw.itemgroup;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
+import net.mcreator.yaaw.item.WandItem;
 import net.mcreator.yaaw.YaawElements;
 
 @YaawElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class WandsItemGroup extends YaawElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.STICK, (int) (1));
+				return new ItemStack(WandItem.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

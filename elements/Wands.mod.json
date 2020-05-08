@@ -4,7 +4,7 @@
   "definition": {
     "name": "Wands",
     "icon": {
-      "value": "Items.STICK"
+      "value": "CUSTOM:Wand"
     },
     "showSearch": false
   }
